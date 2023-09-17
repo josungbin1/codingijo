@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 후기 작성</title>
+  <link rel="stylesheet" href="../codingijo/index3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8ff4dc4bc9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <aside>
+      <div id="aside-logo">
+        <i style="font-size: 100px;" class="fa-solid fa-clapperboard"></i>
+        <p class="logo-text">Movies Review</p>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <div class="aside-menu-item active">
+              <p>영화 후기들</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li>
+            <div class="aside-menu-item">
+              <p>영화 후기 쓰기</p>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </li>
+          <li>
+            <div class="aside-menu-item">
+              <p>마이 페이지</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="menu">
+              <li>
+                <div class="aside-menu-item">
+                  <p>내가 찜한 영화</p>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </li>
+              <li>
+                <div class="aside-menu-item">
+                  <p>내가 댓글/좋아요 남긴 후기</p>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </li>
+              <li>
+                <div class="aside-menu-item">
+                  <p>내가 쓴 후기</p>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div id="main-wrapper">
+      <header>
+        <p class="user-text">사용자<span>님</span></p>
+        <i class="fa-solid fa-bars menu-icon"></i>
+      </header>
+      <main>
+        <div class="write-review">
+          <div class="add-new-review">
+            <h1>새로운 영화 후기 작성하기</h1>
+            <div class="container">
+              <div class="movie-title">
+                <div class="input-box">
+                  <label class="input-label">영화 제목 : </label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="ReviewRatings">
+                <div class="review-title">
+                  <div class="input-box">
+                    <label class="input-label">후기 제목 : </label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="ratings">
+                  <div class="input-box">
+                    <label class="input-label">별점 : </label>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-title">
+                <div class="input-box">
+                  <label class="input-label">후기 내용</label>
+                  <br>
+                  <textarea cols="30" rows="30"></textarea>
+                </div>
+              </div>
+              <button>후기 등록하기</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
