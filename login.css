@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Orbit&display=swap');
+
+:root{
+  font-family: 'Orbit', sans-serif;
+
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.25rem;
+
+  --gray-000: 228, 100%, 100%;
+  --gray-005: 228, 100%, 98%; 
+  --gray-010: 226, 35%, 93%;  
+  --gray-015: 228, 24%, 88%;  
+  --gray-020: 227, 17%, 77%;  
+  --gray-030: 229, 13%, 67%;  
+  --gray-040: 227, 11%, 57%;  
+  --gray-050: 227, 9%, 48%;   
+  --gray-060: 226, 11%, 39%;  
+  --gray-070: 224, 13%, 30%;  
+  --gray-080: 228, 14%, 21%;  
+  --gray-085: 228, 16%, 13%;  
+  --gray-090: 231, 16%, 8%;   
+  --gray-095: 225, 18%, 4%;   
+  --gray-100: 225, 0%, 0%;    
+
+
+  --ui-color-primary: 171, 73.1%, 50.4%;
+
+
+
+/*기준은 라이트모드*/
+/* 배경색상, 가장 기본이 100 부터 시작 줄어든다*/
+  --ui-color-background-000: var(--gray-080);
+  --ui-color-background-010: var(--gray-070);
+  --ui-color-background-020: var(--gray-060);
+  --ui-color-background-030: var(--gray-050);
+  --ui-color-background-040: var(--gray-040);
+  --ui-color-background-050: var(--gray-030);
+  --ui-color-background-060: var(--gray-020);
+  --ui-color-background-070: var(--gray-015);
+  --ui-color-background-080: var(--gray-010);
+  --ui-color-background-090: var(--gray-005);
+  --ui-color-background-100: var(--gray-000);
+
+  /* 전경 (글자색, 테두리색), 100부터 시작, 줄어든다 */
+  --ui-color-foreground-000:var(--gray-020);
+  --ui-color-foreground-010:var(--gray-030);
+  --ui-color-foreground-020:var(--gray-040);
+  --ui-color-foreground-030:var(--gray-050);
+  --ui-color-foreground-040:var(--gray-060);
+  --ui-color-foreground-050:var(--gray-070);
+  --ui-color-foreground-060:var(--gray-080);
+  --ui-color-foreground-070:var(--gray-085);
+  --ui-color-foreground-080:var(--gray-090);
+  --ui-color-foreground-090:var(--gray-095);
+  --ui-color-foreground-100:var(--gray-100);
+
+
+}
+
+:root.dark{
+  --ui-color-background-000: var(--gray-020);
+  --ui-color-background-010: var(--gray-030);
+  --ui-color-background-020: var(--gray-040);
+  --ui-color-background-030: var(--gray-050);
+  --ui-color-background-040: var(--gray-060);
+  --ui-color-background-050: var(--gray-070);
+  --ui-color-background-060: var(--gray-080);
+  --ui-color-background-070: var(--gray-085);
+  --ui-color-background-080: var(--gray-090);
+  --ui-color-background-090: var(--gray-095);
+  --ui-color-background-100: var(--gray-100);
+
+  --ui-color-foreground-000:var(--gray-080);
+  --ui-color-foreground-010:var(--gray-070);
+  --ui-color-foreground-020:var(--gray-060);
+  --ui-color-foreground-030:var(--gray-050);
+  --ui-color-foreground-040:var(--gray-040);
+  --ui-color-foreground-050:var(--gray-030);
+  --ui-color-foreground-060:var(--gray-020);
+  --ui-color-foreground-070:var(--gray-015);
+  --ui-color-foreground-080:var(--gray-010);
+  --ui-color-foreground-090:var(--gray-005);
+  --ui-color-foreground-100:var(--gray-000);
+
+}
+
+body{
+  margin: 0;
+  background-color: hsl(var(--ui-color-background-100));
+  color: hsl(var(--ui-color-foreground-100));
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.text-button{
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  color: hsl(var(--ui-color-foreground-100));
+  font-size: var(--font-xs);
+}
+.text-button:active{
+  background-color: hsl(var(--ui-color-background-090));
+}
+
+section{
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.bg-img{
+  width: 100%;
+  height: 100%;
+  background-image: url('../psy_front23_4/board-project/imges/movie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: ;
+}
+.wrap{
+  height: 100vh;
+  background-color: black;
+  background-color: hsla(var(--ui-color-background-100), 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.auth-box{
+  /* border: 5px solid black; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background-color: hsl(var(--ui-color-foreground-080), 0.4);
+  border-radius: 10px;
+}
+.auth-box > h1{
+  text-align : center;
+}
+.auth-form{
+  /* border: 3px solid gold; */
+  
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+input{
+  background-color: 0;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid hsl(var(--ui-color-foreground-090));
+  outline: none;
+  width: 100%;
+}
+button{
+  padding: 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(var(--ui-color-background-080));
+}
+.err-msg{
+  color: red;
+  font-size: var(--font-xs);
+  padding-left: 10px;
+}
+
+.input-box-wrap{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.logo-img{
+  width: 100px;
+  align-self: center;
+}
+.auth-body{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.line{
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.auth-footer{
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  align-items: center;
+}
+.auth-footer > .line{
+  height: 100%;
+}
+.cancel-icon{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+select{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+option{
+  background: rgba(256, 256, 256, 0.8);
+  padding: 10px;
+}
+select + input{
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+h1{
+  margin-top: var(--font-xl);
+}
